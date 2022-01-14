@@ -68,8 +68,3 @@ int main(){
     a.Compact();
     a.output();
 }
-/*
-a=1/2
-b=1/5
-c=a+b+a*b;
-*/
