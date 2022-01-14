@@ -58,7 +58,6 @@ void Fraction::Compact(){
     int a=__gcd(numerator,denominator);
     numerator/=a;
     denominator/=a;
-    cout<<a<<endl;
 }
 int main(){
     Fraction a,b;
