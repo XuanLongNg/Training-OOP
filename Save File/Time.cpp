@@ -53,5 +53,5 @@ class Time{
         cout<<minute<<":";
         if(second<10) cout<<"0";
         cout<<second<<endl;
-    }
+    } 
 };
