@@ -26,5 +26,5 @@ class Point{
     }
     double distance(Point another){
         return sqrt(pow(x-another.getX(),2)+pow(y-another.getY(),2));
-    }
+    } 
 };

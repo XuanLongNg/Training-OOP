@@ -31,5 +31,5 @@ class Account{
         cout<<"Id: "<<id<<endl;
         cout<<"Name: "<<name<<endl;
         cout<<"Balance: "<<balance<<endl;
-    }
+    } 
 };

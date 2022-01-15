@@ -93,7 +93,7 @@ int main() {
 	Point p2(2.8, 3.2);
 	cout << p1.distance(p2) << endl;
 	cout << p1.distance(2.34, 7.8) << endl;
-	return 0;
+	return 0; 
 }
 */
 int main() {
