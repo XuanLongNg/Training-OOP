@@ -3,6 +3,7 @@
 #include "Person.cpp"
 #include "Student 3.cpp"
 #include "Employee.cpp"
+#include "Date.cpp"
 using namespace std;
 /* Rectangle.cpp
 int main() {
@@ -46,10 +47,21 @@ int main() {
 	return 0;
 }
 */
+/* Employee.cpp
 int main() {
 	Employee e(1, "Kien", "Hoang", 1000);
 	cout << "Id: " << e.getId() << endl;
 	cout << "Name: " << e.getFullName() << endl;
 	cout << "Salary: " << e.getSalary() << endl;
+	return 0;
+}
+*/
+int main() {
+	Date d(1, 1, 1997);
+	d.display();
+	d.setDate(12, 12, 2004);
+	d.display();
+	d.setMonth(3);
+	d.display();	
 	return 0;
 }
