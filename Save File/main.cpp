@@ -4,6 +4,9 @@
 #include "Student 3.cpp"
 #include "Employee.cpp"
 #include "Date.cpp"
+#include "Time.cpp"
+#include "Point.cpp"
+#include "Account.cpp"
 using namespace std;
 /* Rectangle.cpp
 int main() {
@@ -56,6 +59,7 @@ int main() {
 	return 0;
 }
 */
+/* Date.cpp
 int main() {
 	Date d(1, 1, 1997);
 	d.display();
@@ -63,5 +67,42 @@ int main() {
 	d.display();
 	d.setMonth(3);
 	d.display();	
+	return 0;
+}
+*/
+/* Time.cpp
+int main() {
+	Time t(12, 1, 1);
+	t.display();
+	t.setTime(23, 59, 59);
+	t.display();
+	t.nextSecond();
+	t.display();
+	t.nextSecond();
+	t.display();
+	t.setTime(7, 0, 0);
+	t.display();
+	t.previousSecond();
+	t.display();
+	return 0;
+}
+*/
+/* Point.cpp
+int main() {
+	Point p1(1.5, 6.7);
+	Point p2(2.8, 3.2);
+	cout << p1.distance(p2) << endl;
+	cout << p1.distance(2.34, 7.8) << endl;
+	return 0;
+}
+*/
+int main() {
+	Account account1(1000, "Tuan", 2000);
+	account1.display();
+	account1.withdraw(2100);
+	account1.deposit(600);
+	cout << "Balance: " << account1.getBalance() << endl;
+	account1.withdraw(2100);
+	cout << "Balance: " << account1.getBalance() << endl;
 	return 0;
 }
