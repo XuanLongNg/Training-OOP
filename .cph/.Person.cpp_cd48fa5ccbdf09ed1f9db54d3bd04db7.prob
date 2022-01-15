@@ -1,0 +1,1 @@
+{"name":"Local: Person","url":"d:\\OOP basic\\Person.cpp","tests":[{"id":1642235361072,"input":"Nguyen    xuan Long\n9/11/2002\nNam\nvan   Ha-DONg Anh","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\OOP basic\\Person.cpp","group":"local","local":true}
