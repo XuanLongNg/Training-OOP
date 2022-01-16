@@ -1,4 +1,5 @@
 #include "Person.cpp"
+using namespace std;
 class Employee: public Person{
     private:
     int salary;

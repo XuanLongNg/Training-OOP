@@ -1,4 +1,5 @@
 #include<iostream>
+#pragma once
 using namespace std;
 class Person{
     private:
@@ -10,7 +11,7 @@ class Person{
     void setAddress(string address){ this->address=address;}
     string getName(){ return name;}
     string getAddress(){ return address;}
-    void display(){
+    virtual void display(){
         cout<<"Name: "<< name << endl;
         cout<<"Address: "<< address << endl;
     }

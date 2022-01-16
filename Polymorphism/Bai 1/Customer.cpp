@@ -9,6 +9,6 @@ class Customer: public Person{
     void display(){
         cout<<"Customer name: "<<getName()<< endl;
         cout<<"Customer address: "<<getAddress()<< endl;
-        cout<<"Customer salary: "<<balance<<endl;
+        cout<<"Customer balance: "<<balance<<endl;
     }
 };
