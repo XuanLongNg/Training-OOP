@@ -1,55 +1,15 @@
-#include<iostream>
-
-using namespace std;
-
-class Person {
-private:
-	string name;
-	string gender;
-
-public:
-	Person(string name, string gender) {
-		this->name = name;
-		this->gender = gender;
-	}
-
-	string getName() {
-		return name;
-	}
-
-	void setName(string name) {
-		this->name = name;
-	}
-
-	string getGender() {
-		return gender;
-	}
-
-	void setGender(string gender) {
-		this->gender = gender;
-	}
-
-	void display() {
-		cout << "Name: " << name << endl;
-		cout << "Gender: " << gender << endl;
-	}
-};
-
-class Student : public Person {
+#include "Employee.cpp"
+class Manager: public Employee{
 	private:
-    int salary;
+    int bonus;
     public:
-    Student(string name,string gender, int salary):Person(name,gender){
-        this->salary = salary;
+    Manager(string name,int salary,int bonus):Employee(name,salary){
+        this->bonus = bonus;
     }
+	void setBonus(int bonus){ this->bonus=bonus;}
+	int getBonus(){ return bonus;}
     void display(){
-        Person::display();
-        cout<<"Salary: "<< salary << endl;
+		Employee::setSalary(getSalary()+bonus);
+        Employee::display();
     }
 };
-
-int main() {
-	Student s("Trung", "Male", 1700);
-	s.display();
-	return 0;
-}
