@@ -20,8 +20,10 @@ class Book{
     double getPrice(){ return price;}
     string getAuthorNames(){
         string Name;
-        For(i,0,authors.size()){
+        For(i,0,authors.size()-1){
             Name+=authors[i].getName()+", ";
         }
+        Name+=authors[authors.size()-1].getName();
+        return Name;
     }
 };
