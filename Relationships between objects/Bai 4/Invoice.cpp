@@ -12,9 +12,8 @@ class Invoice{
         this->customer = customer;
         this->amount = amount;
     }
-    void getId(int id){ this->id=id;}
-    void getCustomer(Customer customer){ this->customer=customer;}
-    void getAmount(double amount){ this->amount=amount;}
+    void setCustomer(Customer customer){ this->customer=customer;}
+    void setAmount(double amount){ this->amount=amount;}
     int getId(){ return id;}
     Customer getCustomer(){ return customer;}
     double getAmount(){ return amount;}
