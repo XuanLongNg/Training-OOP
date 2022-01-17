@@ -3,22 +3,22 @@
 using namespace std;
 class Card{
     private:
-    string name;
+    string nameBook;
     string nameAuthor;
     int numberBook;
     public:
     Card(){
-        name="Unknown";
+        nameBook="Unknown";
         nameAuthor="Unknown";
         numberBook=0;
     }
-    Card(string name,string nameAuthor, int numberBook){
-        this->name = name;
+    Card(string nameBook,string nameAuthor, int numberBook){
+        this->nameBook = nameBook;
         this->nameAuthor= nameAuthor;
         this->numberBook = numberBook;
     }
     void display(){
-        cout<<"Name Book: "<<name<<endl;
+        cout<<"Name Book: "<<nameBook<<endl;
         cout<<"Name Author: "<<nameAuthor<<endl;
         cout<<"Number Book: "<<numberBook<<endl;
     }
